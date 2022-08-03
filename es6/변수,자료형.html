@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/qipasulafo/5/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+const name = "Mike";
+const age = 30;
+
+const name1 = "Mike"
+const name2 = 'Mike'
+
+const message = "I'm a boy.";
+const message2 = 'I\'m a boy.';
+
+const message3 = `My name is ${name}`; // 벡틱으로 해야 변수 적용
+console.log(message3)
+
+const y = name/2;
+console.log(y) //NaN
+
+const x = 1/0;
+console.log(x) //무한
+
+// prompt(입력), alert(메세지 보여줌), confirm(확인)
+
+const name3 = prompt("이름을 입력하세요.");
+// alert("환영합니다, " + name3 + "님");
+alert(`환영합니다, ${name3}님`);
+
+const name4 = prompt("예약일 입력","2022-08")
+
+const isAdult = confirm("당신은 성인 입니까?");
+// console.log(isAdult) // true, false 결과 나옴
+
+</script>
+</body>
+</html>
