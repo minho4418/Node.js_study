@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/zoturesotu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+while(true){
+  let answer = confirm('계속 할까요?');
+  if(!answer){
+    break;
+  }
+}
+
+for(let i =0; i<10; i++){
+  if(i%2){
+    continue;
+  }
+  console.log(i);
+}
+
+// switch
+
+let fruit = prompt('무슨 과일을 사고 싶나요?');
+
+switch(fruit){
+  case '사과' :
+    console.log('100원 입니다.');
+    break;
+  case '바나나' :
+    console.log('200원 입니다.');
+    break;
+  case '키위' :
+    console.log('300원 입니다.');
+    break;
+  case '멜론' :
+    console.log('400원 입니다.');
+    break;
+    
+    defalut :
+    console.log('그런 과일은 없습니다.');
+}
+</script>
+</body>
+</html>
