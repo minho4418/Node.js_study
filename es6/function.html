@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/goyedebuka/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+function showError(){
+  alert('에러가 발생했습니다. 다시 시도해주세요.');
+}
+
+showError();
+
+function sayHello(name){
+  const msg = `Hello, ${name}`;
+  console.log(msg);
+}
+
+sayHello('Mike');
+sayHello('Tom');
+sayHello('Minho');
+
+
+let msg1 = 'Hello';
+console.log(msg1);
+function sayHello1(name){
+  
+  if(name){
+    msg1 += `, ${name}`;
+  }
+  console.log(msg1);
+}
+// defalut value
+sayHello1();
+sayHello1('Tom');
+sayHello1('Minho');
+console.log(msg1);
+
+function sayHello2(name = 'friend'){
+  let msg = `Hello, ${name}`
+  console.log(msg)
+}
+
+sayHello2();
+sayHello2('Jane');
+</script>
+</body>
+</html>
