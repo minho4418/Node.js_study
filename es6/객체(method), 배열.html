@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/gavuzogutu/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// method
+
+let boy = {
+  name : "Mike",
+  showName : function (){
+    console.log(this.name) // 해당 객체
+  }
+};
+
+let man = boy;
+man.showName();
+boy = null;
+man.showName();
+
+// array
+
+let days = ["mon", "tue", "wed"];
+days[1] = '화요일'
+days.push("thu");
+days.unshift("sun");
+console.log(days);
+console.log(days.length);
+
+for(let index = 0; index < days.length; index++){
+  console.log(days[index]);
+}
+
+for(let day of days){
+  console.log(day)
+}
+</script>
+</body>
+</html>

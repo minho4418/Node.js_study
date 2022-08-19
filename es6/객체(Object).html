@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/yicuzuzuza/4/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+// 객체
+const superman = {
+  name : 'clark',
+  age : 30
+}
+
+console.log(superman)
+console.log(superman.name)
+console.log(superman['age'])
+
+superman.hairColor = 'black';
+superman['hobby'] = 'football';
+console.log(superman)
+
+delete superman.age;
+console.log(superman)
+// ------------- 
+function makeObject(name, age){
+  return {
+    name : name,
+    age : age,
+    hobby : "football"
+  };
+}
+const Mike = makeObject("Mike", 30);
+console.log(Mike);
+console.log("age" in Mike);
+
+const Mike = {
+  name : "Mike",
+  age : 30
+};
+
+for(x in Mike){
+  console.log(Mike[x])
+}
+</script>
+</body>
+</html>
